@@ -13,7 +13,10 @@ export const RootNav = () => {
 
   return (
     <NavigationContainer>
-      <RootStack.Navigator>
+      <RootStack.Navigator
+        screenOptions={{ headerShown: false }}
+        initialRouteName="LoginScreen"
+      >
         <RootStack.Screen name="LoginScreen" component={LoginScreen} />
         <RootStack.Screen name="BottomTabs" component={BottomTabNav} />
       </RootStack.Navigator>
